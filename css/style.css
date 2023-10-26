@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: lightgray !important;
+    transition: .5s;
+}
