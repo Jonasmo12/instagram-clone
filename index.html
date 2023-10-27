@@ -9,10 +9,186 @@
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <nav class="d-flex justify-content-between p-3 mb-2 bg-white text-dark border border-2 justify-content-center" style="height: 7rem;">
+        <div class="ms-5 pt-3"><img src="/img/pngwing.com.png" class="w-50" alt="logo"></div>
+    
+        <div class="pt-4" style="margin-right: 10rem;"><input class="form-control bg-light " style="width: 27rem;" type="text" placeholder="Search..." ></div>
+    
+        <div class="me-5 pt-2"  ><ul class="d-flex flex-row list-unstyled">
+                <!-- <li class="p-3">
+                    <svg fill="#000000" width="42px" height="42px" viewBox="-4.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>home</title> <path d="M19.469 12.594l3.625 3.313c0.438 0.406 0.313 0.719-0.281 0.719h-2.719v8.656c0 0.594-0.5 1.125-1.094 1.125h-4.719v-6.063c0-0.594-0.531-1.125-1.125-1.125h-2.969c-0.594 0-1.125 0.531-1.125 1.125v6.063h-4.719c-0.594 0-1.125-0.531-1.125-1.125v-8.656h-2.688c-0.594 0-0.719-0.313-0.281-0.719l10.594-9.625c0.438-0.406 1.188-0.406 1.656 0l2.406 2.156v-1.719c0-0.594 0.531-1.125 1.125-1.125h2.344c0.594 0 1.094 0.531 1.094 1.125v5.875z"></path> </g></svg>
+                </li> -->
+                <!-- <li class="p-3">
+                    <svg width="42px" height="42px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>messanger</title> <desc>Created with sketchtool.</desc> <g id="brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="messanger" fill="#000000"> <path d="M12.9419305,14.4132711 L10.3816186,11.7534625 L5.45094503,14.4802487 L10.8567589,8.74367787 L13.4170708,11.4034864 L18.3477192,8.67670029 L12.9419305,14.4132711 Z M11.8993321,2 C6.43210743,2 2,6.14444891 2,11.2568612 C2,14.1651845 3.43438829,16.7602069 5.67764614,18.457241 L5.67764614,22 L9.05594606,20.1261138 C9.95655399,20.3782306 10.911016,20.5137223 11.8993321,20.5137223 C17.366582,20.5137223 21.7986642,16.3692734 21.7986642,11.2568612 C21.7986642,6.14444891 17.366582,2 11.8993321,2 L11.8993321,2 Z" id="Shape"> </path> </g> </g> </g></svg>
+                </li> -->
+                <li class="p-3">
+                    <svg width="42px" height="42px" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#333333;} .st1{fill:none;stroke:#333333;stroke-width:32;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <g id="Layer_1"></g> <g id="Layer_2"> <g> <path class="st0" d="M393.87,74.21H118.13c-24.25,0-43.91,19.66-43.91,43.91v275.74c0,24.25,19.66,43.91,43.91,43.91h275.74 c24.25,0,43.91-19.66,43.91-43.91V118.13C437.79,93.87,418.13,74.21,393.87,74.21z M354.04,272H272v82.04c0,8.84-7.16,16-16,16 s-16-7.16-16-16V272h-82.04c-8.84,0-16-7.16-16-16s7.16-16,16-16H240v-82.04c0-8.84,7.16-16,16-16s16,7.16,16,16V240h82.04 c8.84,0,16,7.16,16,16S362.88,272,354.04,272z"></path> </g> </g> </g></svg> 
+                </li>
+                <!-- <li class="p-3">
+                    <svg fill="#000000" width="42px" height="42px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></g></svg>
+                </li> -->
+                <li class="p-3">
+                    <svg width="35px" height="42px" viewBox="0 -0.5 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>heart-like</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-100.000000, -880.000000)" fill="#000000"> <path d="M128,893.682 L116,908 L104,893.623 C102.565,891.629 102,890.282 102,888.438 C102,884.999 104.455,881.904 108,881.875 C110.916,881.851 114.222,884.829 116,887.074 C117.731,884.908 121.084,881.875 124,881.875 C127.451,881.875 130,884.999 130,888.438 C130,890.282 129.553,891.729 128,893.682 L128,893.682 Z M124,880 C120.667,880 118.145,881.956 116,884 C113.957,881.831 111.333,880 108,880 C103.306,880 100,884.036 100,888.438 C100,890.799 100.967,892.499 102.026,894.097 L114.459,909.003 C115.854,910.48 116.118,910.48 117.513,909.003 L129.974,894.097 C131.22,892.499 132,890.799 132,888.438 C132,884.036 128.694,880 124,880 L124,880 Z" id="heart-like" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>    
+                </li>
+                <li class="p-3">
+                    <svg fill="#000000" width="42px" height="42px" viewBox="0 0.10 32 32" id="icon" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;}</style></defs><title>send--alt--filled</title><path d="M27.71,4.29a1,1,0,0,0-1.05-.23l-22,8a1,1,0,0,0,0,1.87l8.59,3.43L19.59,11,21,12.41l-6.37,6.37,3.44,8.59A1,1,0,0,0,19,28h0a1,1,0,0,0,.92-.66l8-22A1,1,0,0,0,27.71,4.29Z"></path><rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect></g></svg>
+                </li>
+            </ul>
+    </div>
+
+</nav>
+
+
+    
+
+    <div class="container">
+        <div class="row">
+            <!----Stories ------------------------------------------------------>
+            <br>
+            <div class="col-lg-2">
+                <br>
+                <br>
+                <br>
+                <img src="/img/shantie.jpeg" width="200" height="200" alt="" class="fire">
+                <h5 class="pt-2 text-center"> 
+                    Stories
+                </h5>
+               
+            </div>
+
+            <div class="col-lg-2">
+                <br>
+                <br>
+                <br>
+                <img src="/img/jonny.jpeg" width="200" height="200" alt="" class="fire">
+                <h5 class="pt-2 text-center"> 
+                    Jonny_Bango
+                </h5>
+            </div>
+
+            <div class="col-lg-2">
+                <br>
+                <br>
+                <br>
+                <img src="/img/miss fire.jpeg" width="200" height="200" alt="" class="fire">
+                <h5 class="pt-2 text-center"> 
+                    Miss_Fire
+                </h5>
+
+            </div>
+            <div class="col-lg-2">
+                <br>
+                <br>
+                <br>
+                <img src="/img/steve.jpeg" width="200" height="200" alt="" class="fire">
+                <h5 class="pt-2 text-center"> 
+                    Stevovo
+                </h5>
+            </div>
+            <div class="col-lg-2">
+                <br>
+                <br>
+                <br>
+                <img src="/img/ntombi.jpeg" width="200" height="200" alt="" class="fire">
+                <h5 class="pt-2 text-center"> 
+                    Ntombi_Zonke
+                </h5>
+
+            </div>
+            <div class="col-lg-2">
+                <br>
+                <br>
+                <br>
+                <img src="/img/lesego.jpeg" width="200" height="200" alt="" class="fire">
+                <h5 class="pt-2 text-center"> 
+                    Lesegow
+                </h5>
+             </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img style="border-radius: 50%; border: 5px solid black;"
+                            src="https://images.pexels.com/photos/9010057/pexels-photo-9010057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            height="90" width="90" alt="">
+                    </div>
+
+
+                    <div class="col-lg-3">
+                        <p class="fw-bolder pt-3 mb-0">kevingates</p>
+                        <p class="fw-lighter mt-0" style="font-size: 14px;">Akasia, Pretoria</p>
+                    </div>
+
+
+                    <div class="col-lg-1">
+                        <span class="pt-3">3</span>
+                    </div>
+                    <div class="col-lg-8"></div>
+                </div>
+                <!----Post ------------------------------------------------------>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        
+                            <img style="object-fit: cover; padding-top: 10px; width: 100%; padding-bottom: 10px;"
+                            src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            width="500" height="700" alt="new post">
+
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-md-6">
+                                    <img src="/img/feed_icons/like.png" width="30" alt="">
+                                    <img src="/img/feed_icons/comment.png" width="20" alt="">
+                                    <img src="/img/feed_icons/send.png" width="20" alt="">
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 d-flex justify-content-end">
+                                    <img src="/img/feed_icons/save.png" width="30" alt="">
+                                </div>
+                            </div>
+
+
+                        
+                    </div>
+
+
+                    
+                    
+                    <div class="col-lg-4">
+                        <p class="fw-bolder" style="color: lightgray;">Suggested For You</p>
+                    </div>
+
+
+                    <div class="col-lg-2">
+                        <p class="fw-bolder">See All</p>
+                        <div class="follow-links">
+                            <p><a href="">follow</a></p>
+                            <p><a href="">follow</a></p>
+                            <p><a href="">follow</a></p>
+                            <p><a href="">followed</a></p>
+                            <p><a href="">follow</a></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<footer>
+    <div>
+     </div>
+</footer>
 </body>
 
 </html>
