@@ -114,7 +114,7 @@
             </div>
             <div class="col-4">
                 <p class="fw-bolder m-0 p-0 pt-3">pedrosanchez</p>
-                <p>Location</p>
+                <p class="fw-lighter" style="font-size: 12px;">London, United Kingdom</p>
             </div>
             <div class="col-1 text-end">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-three-dots pt-3" viewBox="0 0 16 16">
@@ -154,7 +154,7 @@
                 <p>Amazing scenes as Young Boys United finally secured promotion. It has be a 50 year wait for this moment and now they fans will enjoy this moment.</p>
                 <p class="fw-bolder">View all</p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6 suggested-for-you-content">
                 <p class="fw-bolder" style="color: lightgray;">Suggested For You</p>                
 
                 <div class="row">
@@ -164,6 +164,9 @@
                     <div class="col-3">
                         <p style="font-size: 12px;" class="pb-0 mb-0 fw-bolder">pedrosanchez</p>
                         <p style="font-size: 10px;">Suggested for you</p>
+                    </div>
+                    <div class="col-2 text-end">
+                        <a class="sell-all-text" href="">follow</a>
                     </div>
                     
                 </div>
@@ -176,6 +179,9 @@
                         <p style="font-size: 12px;" class="pb-0 mb-0 fw-bolder">raulpuyol</p>
                         <p style="font-size: 10px;">followed by ramsdale</p>
                     </div>
+                    <div class="col-2 text-end">
+                        <a class="sell-all-text" href="">follow</a>
+                    </div>
                     
                 </div>
 
@@ -186,6 +192,9 @@
                     <div class="col-3">
                         <p style="font-size: 12px;" class="pb-0 mb-0 fw-bolder">slobozlai</p>
                         <p style="font-size: 10px;">Suggested for you</p>
+                    </div>
+                    <div class="col-2 text-end">
+                        <a class="sell-all-text" href="">follow</a>
                     </div>
                     
                 </div>
@@ -198,18 +207,21 @@
                         <p style="font-size: 12px;" class="pb-0 mb-0 fw-bolder">ramsdale</p>
                         <p style="font-size: 10px;">Suggested for you</p>
                     </div>
+                    <div class="col-2 text-end">
+                        <a class="sell-all-text" href="">follow</a>
+                    </div>
                     
                 </div>
            
             </div>
-            <div class="col-lg-2 text-center">
+            <!-- <div class="col-lg-2 text-center">
                 <p class="text-center">Sell All</p>
                 <p class="sell-all-text"><a href="">follow</a></p>
                 <p class="sell-all-text"><a href="">follow</a></p>
                 <p class="sell-all-text"><a href="">follow</a></p>
                 <p class="sell-all-text"><a href="">followed</a></p>
                 <p class="sell-all-text"><a href="">follow</a></p>
-            </div>
+            </div> -->
         </div>
 
 
@@ -258,6 +270,13 @@
   @media screen and (max-width: 600px) {
   .col-1 {
     width: 120px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .suggested-for-you-content {
+    display: none;
   }
 }
 </style>
