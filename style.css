@@ -2,7 +2,10 @@
 
     background: linear-gradient(white, white) padding-box,
 linear-gradient(to right, #f4b248, rgb(162, 38, 224)) border-box;
-border-radius: 50em;
-border: 7px solid transparent;
-margin-left: 10px;
+border-radius: 50%;
+border: 2px solid transparent;
+/* margin-left: 10px; */
 }
+
+
+
